@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+  min-height: 100vh;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, rgba(49, 130, 206, 0.1) 0%, rgba(79, 209, 197, 0.1) 100%);
+}
+
+.gradient-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.gradient-orb-1 {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(79, 209, 197, 0.3) 0%, rgba(79, 209, 197, 0) 70%);
+  top: 10%;
+  left: 5%;
+}
+
+.gradient-orb-2 {
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(49, 130, 206, 0.3) 0%, rgba(49, 130, 206, 0) 70%);
+  top: 60%;
+  right: 10%;
+}
+
+.gradient-orb-3 {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(236, 201, 75, 0.3) 0%, rgba(236, 201, 75, 0) 70%);
+  top: 30%;
+  right: 30%;
+}
+
+.gradient-orb-4 {
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(245, 101, 101, 0.2) 0%, rgba(245, 101, 101, 0) 70%);
+  bottom: 10%;
+  left: 20%;
+}
+
+.btn {
+  @apply font-bold py-2 px-4 rounded-full transition-all duration-300 ease-in-out;
+}
+
+.btn-primary {
+  @apply bg-blue-600 text-white hover:bg-blue-700 hover:shadow-lg transform hover:-translate-y-1;
+}
+
+.btn-secondary {
+  @apply bg-gray-700 text-white hover:bg-gray-600 hover:shadow-lg transform hover:-translate-y-1;
+}
+
+.btn-success {
+  @apply bg-green-600 text-white hover:bg-green-700 hover:shadow-lg transform hover:-translate-y-1;
+}
+
+.btn-outline {
+  @apply bg-transparent border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white hover:shadow-lg transform hover:-translate-y-1;
+}
+
+.btn-outline-light {
+  @apply bg-transparent border-2 border-white text-white hover:bg-white hover:text-gray-800 hover:shadow-lg transform hover:-translate-y-1;
+}
